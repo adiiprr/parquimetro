@@ -1,0 +1,141 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Fundo da página com imagem + sobreposição escura para profundidade */
+body {
+    min-height: 100vh;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('fundo.png') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 50px 20px;
+    color: #e0f7fa; 
+}
+
+/* Título e parágrafos fora da caixa */
+h1, p {
+    text-align: center;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+    font-size: 3rem;
+    color: #cfd8dc; 
+}
+
+p {
+    font-size: 1.2rem;
+    color: #b0bec5; 
+}
+
+/* Container */
+.container {
+    margin-top: 30px;
+    background: rgba(20, 20, 20, 0.6); 
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 25px;
+    padding: 40px 50px;
+    width: 100%;
+    max-width: 500px; 
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8), inset 0 0 10px rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Form elementos */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+input {
+    padding: 12px;
+    margin: 12px 0;
+    width: 90%;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #e0f7fa;
+    font-size: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+input::placeholder {
+    color: rgba(224, 247, 250, 0.6);
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
+}
+
+/* Botão */
+button {
+    padding: 12px 25px;
+    margin-top: 12px;
+    border-radius: 12px;
+    border: none;
+    background-color: #b71c1c; 
+    color: #e0f7fa;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(183, 28, 28, 0.5);
+}
+
+button:hover {
+    background-color: #d32f2f;
+    box-shadow: 0 6px 20px rgba(211, 47, 47, 0.7);
+}
+
+/* Resultado */
+#resultado {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffccbc; 
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .container {
+        padding: 25px 20px;
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    input, button {
+        width: 100%;
+    }
+}

@@ -1,12 +1,17 @@
-#Simulador de Parquímetro
+Simulador de Parquímetro
 
-#Descrição
+
+
+
+
+
+Descrição
 
 Aplicação web interativa que simula um parquímetro: o usuário insere um valor em reais e descobre quanto tempo de estacionamento ele pode obter, além do troco, se houver.
 
 O projeto utiliza Programação Orientada a Objetos (POO) em JavaScript e um design moderno com glassmorphism e paleta escura/friar com pontos de contraste.
 
-#Funcionalidades
+Funcionalidades
 
 Recebe valor do usuário e calcula tempo de permanência baseado em faixas:
 
@@ -22,7 +27,7 @@ Exibe mensagem de erro para valores insuficientes.
 
 Layout responsivo e visual moderno.
 
-#Como Usar
+Como Usar
 
 Clone ou baixe o repositório.
 
@@ -32,7 +37,7 @@ Insira o valor desejado no formulário e clique em Calcular.
 
 Veja o tempo de permanência e o troco exibidos abaixo do formulário.
 
-#Estrutura do Projeto
+Estrutura do Projeto
 projeto-parquimetro/
 │
 ├─ index.html       # Estrutura da página
@@ -40,5 +45,15 @@ projeto-parquimetro/
 ├─ script.js        # Lógica de cálculo com POO
 ├─ images/          # Fundo ou ícones (opcional)
 └─ README.md        # Este arquivo
+Paleta de Cores
 
-#Desenvolvido por Ariadne P. Ramos. 
+Cinza Escuro / Preto → fundo, sombra, atmosfera sombria
+
+Vermelho Escuro / Ferrugem → botões e detalhes de contraste
+
+Ciano Claro / Branco Frio → textos e iluminação
+
+Resultado → Cor quente (#ffccbc) para destacar tempo e troco
+
+## Desenvolvido por
+**Ariadne P. Ramos**
